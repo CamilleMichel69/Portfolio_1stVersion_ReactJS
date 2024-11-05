@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #c6e2ff;
+    font-family: 'Jost';
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;;
+    min-height: 100vh;
+  }
+
+main {
+    flex: 1;
+}

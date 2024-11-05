@@ -1,0 +1,29 @@
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+
+    .__img {
+        width: 25%;
+        border-radius: 50%;
+    }
+
+    .__paragraphe {
+        width: 500px;
+        margin-left: 50px;
+
+        h1 {
+            font-size: 50px;
+            color: #05396f;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    
+
+
+}
