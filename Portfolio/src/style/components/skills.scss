@@ -1,0 +1,25 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skills-box-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .skills-box-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .skills-card {
+        background-color: #05396f;
+        color: #d8eafc;
+        border-radius: 25px;
+        margin: 20px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Booki",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "HTML et CSS",
+        "githublink": "https://github.com/CamilleMichel69/Projet_2"
+    },
+    {
+        "id": 2,
+        "title": "Sophie Bluel",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "JavaScript",
+        "githublink": "https://github.com/CamilleMichel69/Projet_3"
+    },
+    {
+        "id": 3,
+        "title": "Nina Carducci",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "HTML",
+        "githublink": "https://github.com/CamilleMichel69/Projet_4"
+    },
+    {
+        "id": 4,
+        "title": "Kasa",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "JavaScript",
+        "githublink": "https://github.com/CamilleMichel69/Projet_5"
+    },
+    {
+        "id": 5,
+        "title": "Mon Vieux Grimoire",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "JavaScript",
+        "githublink": "https://github.com/CamilleMichel69/Projet_6"
+    },
+    {
+        "id": 6,
+        "title": "Qwenta - Menu Maker",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "JavaScript",
+        "githublink": "https://burly-maiasaura-2ac.notion.site/126fc9d2d88480e78659f77b3b560135?v=126fc9d2d8848168bc3b000cae8e3880"
+    },
+    {
+        "id": 7,
+        "title": "Monopoly GO",
+        "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "description": "JavaScript",
+        "githublink": "https://github.com/CamilleMichel69/MonopolyGo"
+    }
+]

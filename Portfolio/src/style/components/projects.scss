@@ -1,0 +1,60 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+  .gallery {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border-radius: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+
+  &__img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: transform 0.3s ease;
+  }
+
+  &__title {
+    position: absolute;
+    color: #f0f0f0;
+    bottom: 0;
+    margin: 10px 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-sizing: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, #00000080);
+    transition: transform 0.3s ease; 
+    z-index: 1;
+  }
+
+  &:hover {
+    .card__img, .card__title, .card__overlay {
+      transform: scale(1.03);
+    }
+  }
+}

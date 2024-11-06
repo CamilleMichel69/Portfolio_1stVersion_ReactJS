@@ -1,13 +1,12 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #c6e2ff;
+    background: #d8eafc;
     font-family: 'Jost';
-    display: flex;
-    flex-direction: column;
 }
 
 .wrapper {
@@ -18,4 +17,9 @@ body {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #05396f;
 }
