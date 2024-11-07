@@ -3,23 +3,66 @@
     flex-direction: column;
     align-items: center;
 
-    .skills-box-1 {
+    h2 {
+        color: #05396f;
+        font-size: 2rem;
+    }
+
+    .skills-box-1, .skills-box-2 {
         display: grid;
+        width: 80%;
+        max-width: 1000px;
+        gap: 2rem;
+    }
+
+    .skills-box-1 {
         grid-template-columns: repeat(2, 1fr);
-        text-align: center;
+        margin-bottom: 2rem; 
     }
 
     .skills-box-2 {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        text-align: center;
     }
 
     .skills-card {
         background-color: #05396f;
         color: #d8eafc;
-        border-radius: 25px;
-        margin: 20px;
-        padding: 10px;
+        border-radius: 20px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #4e7aa8;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .skill-bubble {
+            background-color: #d8eafc;
+            color: #05396f;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: default;
+            }
+        }
     }
 }

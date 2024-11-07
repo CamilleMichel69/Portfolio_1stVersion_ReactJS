@@ -5,6 +5,7 @@
         "cover": "src/images/Booki.png",
         "pictures": "https://portfoliocamillemichel.s3.eu-north-1.amazonaws.com/Booki.png",
         "description": "HTML et CSS",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_2"
     },
     {
@@ -13,6 +14,7 @@
         "cover": "src/images/Sophie_Bluel.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "JavaScript",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_3"
     },
     {
@@ -21,6 +23,7 @@
         "cover": "src/images/Nina_Carducci.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "HTML",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_4"
     },
     {
@@ -29,6 +32,7 @@
         "cover": "src/images/Kasa.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "JavaScript",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_5"
     },
     {
@@ -37,6 +41,7 @@
         "cover": "src/images/Mon_Vieux_Grimoire.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "JavaScript",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_6"
     },
     {
@@ -45,6 +50,7 @@
         "cover": "src/images/Qwenta.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "JavaScript",
+        "competences" : "HTML et CSS",
         "githublink": "https://burly-maiasaura-2ac.notion.site/126fc9d2d88480e78659f77b3b560135?v=126fc9d2d8848168bc3b000cae8e3880"
     },
     {
@@ -53,6 +59,7 @@
         "cover": "src/images/MonopolyGO.png",
         "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "JavaScript",
+        "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/MonopolyGo"
     }
 ]
