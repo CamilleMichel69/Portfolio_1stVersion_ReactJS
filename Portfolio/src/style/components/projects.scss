@@ -3,67 +3,70 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     position: relative;
-  }
   
-  .carousel {
-    position: relative;
-    width: 60vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+    .carousel {
+      position: relative;
+      width: 60vw;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
   
-  .carousel-item {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+      .carousel-item {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
   
-  .carousel-image {
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    width: 100%;
-    max-width: 250px; // Limite la taille de l'image
-    transition: transform 0.5s ease;
-  }
+        .carousel-image {
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          object-position: top;
+          transition: transform 0.5s ease;
+        }
   
-  .project-title {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #05396f;
-  }
+        .project-title {
+          margin-top: 1rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #05396f;
+        }
+      }
   
-  .carousel-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
+      .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        background-color: rgba(5, 57, 111, 0.7);
+        padding: 10px 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 0.7rem;
   
-  .button {
-    background-color: #4f46e5;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-weight: bold;
+        &.left {
+          left: 10px;
+        }
   
-    &:hover {
-      background-color: #3730a3;
-      transform: scale(1.05);
-    }
+        &.right {
+          right: 10px;
+        }
   
-    &:active {
-      background-color: #2d1f8b;
+        &:hover {
+            background-color: rgba(5, 57, 111, 1);
+        }
+      }
     }
   }
   

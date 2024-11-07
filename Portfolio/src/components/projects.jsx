@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importer le composant FontAwesomeIcon
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"; // Importer les chevrons
 import projects from "../datas/projects.json";
 import "../style/components/projects.scss";
 
@@ -23,10 +25,10 @@ const Projects = () => {
 
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5, opacity: 1 },
-    left: { x: "-50%", scale: 0.7, zIndex: 3, opacity: 0.8 },
-    left1: { x: "-90%", scale: 0.5, zIndex: 2, opacity: 0.5 },
-    right: { x: "50%", scale: 0.7, zIndex: 3, opacity: 0.8 },
-    right1: { x: "90%", scale: 0.5, zIndex: 2, opacity: 0.5 },
+    left: { x: "-30%", scale: 0.7, zIndex: 3, opacity: 0.8 },
+    left1: { x: "-50%", scale: 0.5, zIndex: 2, opacity: 0.5 },
+    right: { x: "30%", scale: 0.7, zIndex: 3, opacity: 0.8 },
+    right1: { x: "50%", scale: 0.5, zIndex: 2, opacity: 0.5 },
     hidden: { x: "0%", scale: 0.3, zIndex: 0, opacity: 0 },
   };
 
@@ -47,13 +49,15 @@ const Projects = () => {
             <h3 className="project-title">{project.title}</h3>
           </motion.div>
         ))}
-      </div>
-      <div className="carousel-buttons">
-        <button className="button" onClick={handleBack}>Back</button>
-        <button className="button" onClick={handleNext}>Next</button>
+        <div className="carousel-arrow left" onClick={handleBack}>
+          <FontAwesomeIcon icon={faChevronLeft} size="2x" />
+        </div>
+        <div className="carousel-arrow right" onClick={handleNext}>
+          <FontAwesomeIcon icon={faChevronRight} size="2x" />
+        </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Projects;
