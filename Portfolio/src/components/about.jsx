@@ -2,7 +2,7 @@ const About = () => {
     return (
         <section id="about">
             <div>
-                <h2>A PROPOS</h2>
+                <h2>Apprenez-en plus sur moi</h2>
                 <div>
                     <h3>OPENCLASSROOM</h3>
                     <p>Diplôme Développement Web</p>
