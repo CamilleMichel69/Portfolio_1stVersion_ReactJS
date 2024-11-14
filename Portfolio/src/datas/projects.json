@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Booki",
         "cover": "src/images/Booki.png",
-        "pictures": "https://portfoliocamillemichel.s3.eu-north-1.amazonaws.com/Booki.png",
+        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
         "description": "HTML et CSS",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_2"

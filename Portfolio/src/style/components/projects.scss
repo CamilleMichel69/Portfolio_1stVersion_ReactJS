@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
+    z-index: 1;
   
     .carousel {
       position: relative;
@@ -68,5 +69,11 @@
         }
       }
     }
+  }  
+
+
+
+/* Empêche le défilement en cachant le débordement */
+.no-scroll {
+    overflow: hidden;
   }
-  

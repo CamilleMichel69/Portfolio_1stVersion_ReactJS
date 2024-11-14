@@ -1,52 +1,58 @@
+// Projects.jsx
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import ModalProject from "./modalProject";
 import projects from "../datas/projects.json";
 import "../style/components/projects.scss";
 
 const Projects = () => {
   const [centerIndex, setCenterIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  // Fonction pour changer l'index au projet suivant
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+    document.body.classList.add("no-scroll"); 
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+    document.body.classList.remove("no-scroll"); 
+  };
+
   const handleNext = () => {
     setCenterIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
-  // Fonction pour changer l'index au projet précédent
   const handleBack = () => {
     setCenterIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   };
 
-  // Gérer les événements du clavier
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowRight") {
-        handleNext(); // Flèche droite
+        handleNext();
       } else if (event.key === "ArrowLeft") {
-        handleBack(); // Flèche gauche
+        handleBack();
       }
     };
-
-    // Ajouter l'événement au montage du composant
     window.addEventListener("keydown", handleKeyDown);
-
-    // Nettoyer l'événement au démontage du composant
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []); // Le tableau vide [] assure que l'effet s'exécute uniquement au montage et démontage
+  }, []);
 
-  // Positions des projets dans le carousel
   const positions = ["center", "right", "right1", "hidden", "hidden", "left1", "left"];
 
-  // Fonction pour déterminer la position des projets
   const getPosition = (index) => {
     const diff = (index - centerIndex + projects.length) % projects.length;
     return positions[diff] || "hidden";
   };
 
-  // Définir les animations pour les projets
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5, opacity: 1 },
     left: { x: "-30%", scale: 0.7, zIndex: 3, opacity: 0.8 },
@@ -68,6 +74,7 @@ const Projects = () => {
             animate={getPosition(index)}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
+            onClick={() => openModal(project)} 
           >
             <img src={project.cover} alt={`Cover of ${project.title}`} className="carousel-image" />
             <h3 className="project-title">{project.title}</h3>
@@ -80,6 +87,9 @@ const Projects = () => {
           <FontAwesomeIcon icon={faChevronRight} size="2x" />
         </div>
       </div>
+
+      {/* Utilisation du composant ModalProject */}
+      <ModalProject isOpen={isModalOpen} project={selectedProject} onClose={closeModal} />
     </div>
   );
 };
