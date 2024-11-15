@@ -3,8 +3,13 @@
         "id": 1,
         "title": "Booki",
         "cover": "src/images/Booki.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
-        "description": "HTML et CSS",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
+        "description": "L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. En tant que développeur web débutant en alternance au sein de la start-up Booki, je suis chargée d'intégrer l'interface du site avec du code HTML et CSS, en travaillant en collaboration avec la CTO et l’UI designer.",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_2"
     },
@@ -12,7 +17,12 @@
         "id": 2,
         "title": "Sophie Bluel",
         "cover": "src/images/Sophie_Bluel.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "JavaScript",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_3"
@@ -21,7 +31,12 @@
         "id": 3,
         "title": "Nina Carducci",
         "cover": "src/images/Nina_Carducci.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "HTML",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_4"
@@ -30,7 +45,12 @@
         "id": 4,
         "title": "Kasa",
         "cover": "src/images/Kasa.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "JavaScript",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_5"
@@ -39,7 +59,12 @@
         "id": 5,
         "title": "Mon Vieux Grimoire",
         "cover": "src/images/Mon_Vieux_Grimoire.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "JavaScript",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/Projet_6"
@@ -48,7 +73,12 @@
         "id": 6,
         "title": "Qwenta - Menu Maker",
         "cover": "src/images/Qwenta.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "JavaScript",
         "competences" : "HTML et CSS",
         "githublink": "https://burly-maiasaura-2ac.notion.site/126fc9d2d88480e78659f77b3b560135?v=126fc9d2d8848168bc3b000cae8e3880"
@@ -57,7 +87,12 @@
         "id": 7,
         "title": "Monopoly GO",
         "cover": "src/images/MonopolyGO.png",
-        "pictures": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
+        "pictures": [
+            "src/images/Booki.png",
+            "src/images/Booki2.png",
+            "src/images/Booki3.png",
+            "src/images/Booki4.png"
+            ],
         "description": "JavaScript",
         "competences" : "HTML et CSS",
         "githublink": "https://github.com/CamilleMichel69/MonopolyGo"

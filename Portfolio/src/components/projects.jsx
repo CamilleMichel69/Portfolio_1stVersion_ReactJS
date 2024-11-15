@@ -66,20 +66,24 @@ const Projects = () => {
     <div id="projects" className="carousel-container">
       <h2>PROJETS</h2>
       <div className="carousel">
-        {projects.map((project, index) => (
-          <motion.div
+      {projects.map((project, index) => (
+        <motion.div
             key={index}
             className="carousel-item"
             initial="hidden"
             animate={getPosition(index)}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
-            onClick={() => openModal(project)} 
-          >
+            onClick={() => openModal(project)}
+        >
+            <div className="image-wrapper"> 
             <img src={project.cover} alt={`Cover of ${project.title}`} className="carousel-image" />
+            <div className="carousel-overlay">Cliquez sur moi !</div>
+            </div>
             <h3 className="project-title">{project.title}</h3>
-          </motion.div>
+        </motion.div>
         ))}
+
         <div className="carousel-arrow left" onClick={handleBack}>
           <FontAwesomeIcon icon={faChevronLeft} size="2x" />
         </div>

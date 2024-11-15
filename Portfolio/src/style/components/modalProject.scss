@@ -1,0 +1,121 @@
+.project-modal {
+    background-color: #d8eafc;
+    color: #05396f;
+    width: 700px;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 20;
+  
+    &-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 31, 64, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  
+    .modal-content {
+      padding: 50px 70px;
+
+      .modal-title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 10px;
+      }
+
+      .modal-carousel {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+      
+        .carousel {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+      
+          .carousel-image {
+            width: 100%;
+            height: 320px;
+            border-radius: 8px;
+          }
+        }
+
+        .carousel-controls {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+      
+          .carousel-arrow {
+            background: none;
+            border: none;
+            color: #4e7aa8;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0 10px;
+            transition: color 0.3s;
+      
+            &:hover {
+              color: #05396f;
+            }
+          }
+        }
+      }
+
+      .carousel-counter {
+        text-align: center;
+        font-size: 0.8rem;
+      }
+      
+
+      .github-link-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: #05396f;
+        color: white;
+        width: 27%;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        margin-top: 15px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    
+        &:hover {
+          background-color: #1c1c1c;
+        }
+    
+        .github-icon {
+          font-size: 1.2rem;
+        }
+      }
+
+      .modal-close-button {
+        color: #05396f;
+        background: none;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+}
+  
+  
+  
