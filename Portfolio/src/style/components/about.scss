@@ -1,17 +1,124 @@
 .about {
-    width: 40%;
-    height: 70vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 250px;
+    padding: 20px;
 
-    .about-box {
+    h2 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .timeline {
+        position: relative;
+        width: 100%;
+        padding: 50px 0;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between; 
+
+        /* Ligne centrale */
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: white;
+        }
+    }
+
+    .timeline-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1; 
+    }
+
+    .timeline-point {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #4e7aa8;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; 
+    }
+
+    .timeline-card {
         background-color: rgba(5, 57, 111, 1);
         color: white;
         border-radius: 15px;
-        padding: 1px;
-        margin: 15px 0;
+        padding: 15px;
+        width: 200px;
         transition: background-color 0.3s ease;
+        position: absolute;
+        z-index: 2; 
 
-        &:hover {
+        &.top {
+            bottom: 100%; 
+            margin-bottom: 30px;
+        }
+
+        &.bottom {
+            top: 100%;
+            margin-top: 30px; 
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        h4 {
+            margin: 5px auto;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 10px auto;
+        }
+
+        .missions {
+            position: absolute;
+            display: flex;
+            align-items: flex-start; 
+            justify-content: center;
+            flex-direction: column; 
+            top: -10px; 
+            left: 50%;
+            transform: translateX(-50%);
             background-color: #4e7aa8;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            opacity: 0; 
+            
+            ul {
+                padding: 0 20px;
+                margin: 0;
+            }
+        
+            li {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
+
+
+    
