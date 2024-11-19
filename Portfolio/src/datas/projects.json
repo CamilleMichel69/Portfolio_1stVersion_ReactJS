@@ -9,8 +9,13 @@
             "src/images/Booki3.png",
             "src/images/Booki4.png"
             ],
-        "description": "L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. En tant que développeur web débutant en alternance au sein de la start-up Booki, je suis chargée d'intégrer l'interface du site avec du code HTML et CSS, en travaillant en collaboration avec la CTO et l’UI designer.",
-        "competences" : "HTML et CSS",
+        "description": "Développer un site Internet en HTML et CSS pour permettre aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "competences" : [
+            "Front-End",
+            "HTML/CSS",
+            "Responsive",
+            "Git/GitHub"
+            ],
         "githublink": "https://github.com/CamilleMichel69/Projet_2"
     },
     {
@@ -18,13 +23,20 @@
         "title": "Sophie Bluel",
         "cover": "src/images/Sophie_Bluel.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/Sophie_Bluel.png",
+            "src/images/Sophie2.png",
+            "src/images/Sophie3.png",
+            "src/images/Sophie4.png",
+            "src/images/Sophie5.png"
             ],
-        "description": "JavaScript",
-        "competences" : "HTML et CSS",
+        "description": "Développer les fonctionalités du site de l'architecte Sophie Bluel, pour filtrer ses posts, et en uploader de nouveaux via une modale, en communiquant avec une API.",
+        "competences" : [
+            "Front-End",
+            "HTML/CSS",
+            "JavaScript",
+            "API",
+            "Git/GitHub"
+            ],
         "githublink": "https://github.com/CamilleMichel69/Projet_3"
     },
     {
@@ -32,13 +44,20 @@
         "title": "Nina Carducci",
         "cover": "src/images/Nina_Carducci.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/Nina_Carducci.png",
+            "src/images/Nina2.png",
+            "src/images/Nina3.png",
+            "src/images/Nina4.png"
             ],
-        "description": "HTML",
-        "competences" : "HTML et CSS",
+        "description": "Débugging de certains défaults du site. Optimisation référencement SEO. Amélioration accessibilité et performances du site grâce à Wave et Lighthouse.",
+        "competences" : [
+            "Débugging",
+            "SEO",
+            "Accessibilité",
+            "Lighthouse",
+            "Wave",
+            "GitHub Pages"
+        ],
         "githublink": "https://github.com/CamilleMichel69/Projet_4"
     },
     {
@@ -46,13 +65,20 @@
         "title": "Kasa",
         "cover": "src/images/Kasa.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/Kasa.png",
+            "src/images/Kasa2.png",
+            "src/images/Kasa3.png",
+            "src/images/Kasa4.png"
             ],
-        "description": "JavaScript",
-        "competences" : "HTML et CSS",
+        "description": "Développement de l'interface Front-End d'un site d'agence immobilière en React.js, avec CRA et React-Router, en s'appuyant sur un Back-End développé avec Node.js.",
+        "competences" : [
+            "Front-End",
+            "React.js",
+            "Create React App",
+            "React-Router",
+            "SASS",
+            "Git/GitHub"
+            ],
         "githublink": "https://github.com/CamilleMichel69/Projet_5"
     },
     {
@@ -60,13 +86,22 @@
         "title": "Mon Vieux Grimoire",
         "cover": "src/images/Mon_Vieux_Grimoire.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/Mon_Vieux_Grimoire.png",
+            "src/images/MVG2.png",
+            "src/images/MVG3.png",
+            "src/images/MVG4.png",
+            "src/images/MVG5.png"
             ],
-        "description": "JavaScript",
-        "competences" : "HTML et CSS",
+        "description": "Développement de la partie Back-End d'un site de notation de livres via Express de Node.js. Mise en place d'une base de données grâce à MongoDB pour gérer la partie inscription/connexion utilisateur, et pour stocker les données lors de l'ajout d'un nouveau livre sur le site. Sécurité des données grâce à la mise en place de middlewares, du hashage de mot de passe, de vérification d'utilisation d'un e-mail unique, et de la gestion de tokens.",
+        "competences" : [
+            "Back-End",
+            "Node.js",
+            "Express",
+            "API REST",
+            "CRUD",
+            "MongoDB",
+            "JWT"
+            ],
         "githublink": "https://github.com/CamilleMichel69/Projet_6"
     },
     {
@@ -74,27 +109,40 @@
         "title": "Qwenta - Menu Maker",
         "cover": "src/images/Qwenta.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/Qwenta.png",
+            "src/images/Qwenta2.png",
+            "src/images/Qwenta3.png",
+            "src/images/Qwenta4.png"
             ],
-        "description": "JavaScript",
-        "competences" : "HTML et CSS",
-        "githublink": "https://burly-maiasaura-2ac.notion.site/126fc9d2d88480e78659f77b3b560135?v=126fc9d2d8848168bc3b000cae8e3880"
+        "description": "L'entreprise Qwenta souhaite créer un site permettant au restaurateurs de créer leur propre menu personnalisable, l'exporter en PDF ou sur les réseaux, et l'imprimer. Mon rôle consiste à planifier le développement du site en mettant en place une veille technologique via Feedly, en définissant les spécifications techniques du projet, et en l'organisant via un Kanban grâce à un outil de gestion de projet, ici Notion.",
+        "competences" : [
+            "Gestion de projet",
+            "Veille technologique - Feedly",
+            "Agile SCRUM",
+            "Kanban - Notion"
+            ],
+        "githublink": "https://github.com/CamilleMichel69/Projet_7"
     },
     {
         "id": 7,
         "title": "Monopoly GO",
         "cover": "src/images/MonopolyGO.png",
         "pictures": [
-            "src/images/Booki.png",
-            "src/images/Booki2.png",
-            "src/images/Booki3.png",
-            "src/images/Booki4.png"
+            "src/images/MonopolyGO.png",
+            "src/images/Monopoly2.png",
+            "src/images/Monopoly3.png",
+            "src/images/Monopoly4.png",
+            "src/images/Monopoly5.jpg"
             ],
-        "description": "JavaScript",
-        "competences" : "HTML et CSS",
+        "description": "Projet personnel, en cours d'amélioration, développé pour une utilisation en version mobile uniquement, permettant à une amie et moi-même de visualiser les autocollants dont nous disposons et que nous pourrions nous échanger. Mise en place d'une base de données via MongoDB gérée via Express de Node, et déploiement sur Render et Netlify.",
+        "competences" : [
+            "Front-End",
+            "Back-End",
+            "HTML/CSS/JavaScript",
+            "Express de Node.js",
+            "Netlify",
+            "Render"
+            ],
         "githublink": "https://github.com/CamilleMichel69/MonopolyGo"
     }
 ]

@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons"; // Ajout de faTimes
 import "../style/components/modalProject.scss";
 
 Modal.setAppElement("#root");
@@ -14,9 +14,19 @@ const ModalProject = ({ isOpen, project, onClose }) => {
 
   useEffect(() => {
     if (isOpen) {
-      setCurrentIndex(0); // Reset l'index à 0 pour afficher la première image
+      setCurrentIndex(0);
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen && project && project.pictures.length > 0) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % project.pictures.length);
+      }, 2000);
+
+      return () => clearInterval(interval);
+    }
+  }, [isOpen, project]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % project.pictures.length);
@@ -36,19 +46,21 @@ const ModalProject = ({ isOpen, project, onClose }) => {
     >
       {project && (
         <div className="modal-content">
+          {/* Bouton de fermeture en haut à droite */}
+          <button onClick={onClose} className="modal-close-icon">
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+
           <h2 className="modal-title">{project.title}</h2>
 
-          {/* Mini-carousel pour les images */}
           <div className="modal-carousel">
             <div className="carousel">
-              {/* Conteneur div animé avec motion pour chaque image */}
               <motion.div
                 className="carousel-image-container"
                 key={currentIndex}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
               >
                 <img
                   src={project.pictures[currentIndex]}
@@ -67,13 +79,25 @@ const ModalProject = ({ isOpen, project, onClose }) => {
             </div>
           </div>
 
-            {/* Affichage du compteur d'images */}
-            <div className="carousel-counter">
-              <span>{currentIndex + 1}/{project.pictures.length}</span>
-            </div>
+          <div className="carousel-indicators">
+            {project.pictures.map((_, index) => (
+              <span
+                key={index}
+                className={`carousel-indicator ${index === currentIndex ? "active" : ""}`}
+              />
+            ))}
+          </div>
 
           <p>{project.description}</p>
-          <p>{project.competences}</p>
+
+          <div className="competences-container">
+            {project.competences.map((competence, index) => (
+              <span key={index} className="competence-item">
+                {competence}
+              </span>
+            ))}
+          </div>
+
           {project.githublink && (
             <a
               href={project.githublink}
@@ -85,7 +109,6 @@ const ModalProject = ({ isOpen, project, onClose }) => {
               Lien code GitHub
             </a>
           )}
-          <button onClick={onClose} className="modal-close-button">Fermer</button>
         </div>
       )}
     </Modal>
@@ -99,7 +122,7 @@ ModalProject.propTypes = {
     title: PropTypes.string.isRequired,
     pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
     description: PropTypes.string,
-    competences: PropTypes.string,
+    competences: PropTypes.arrayOf(PropTypes.string).isRequired,
     githublink: PropTypes.string,
   }),
 };

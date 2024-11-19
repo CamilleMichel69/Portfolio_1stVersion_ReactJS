@@ -42,7 +42,7 @@ const Skills = () => {
                     <h3>Optimisation / Performance</h3>
                     <div className="skills-list">
                         <span className="skill-bubble">SEO</span>
-                        <span className="skill-bubble">Minification</span>
+                        <span className="skill-bubble">Responsive</span>
                         <span className="skill-bubble">Accessibilité</span>
                         <span className="skill-bubble">Lighthouse</span>
                         <span className="skill-bubble">Wave</span>
