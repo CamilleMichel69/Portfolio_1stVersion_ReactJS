@@ -1,6 +1,8 @@
-.contact-form-container {
+.contact {
+  margin: 20px auto;
+
+  .contact-form-container {
     width: 500px;
-    margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 15px;
@@ -45,9 +47,35 @@
         font-size: 16px;
   
         &:hover {
-          background: #0056b3;
+          background: #4e7aa8;
         }
       }
     }
   }
+
+  .social-box {
+    margin-top: 50px;
+    font-size: 1.3rem;
+
+    p {
+      margin: 10px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    
+      a {
+        font-size: 3rem;
+        color: #05396f; 
+        transition: color 0.3s ease;
+    
+        &:hover {
+          color: #4e7aa8; 
+        }
+      }
+    }
+  }
+}
   

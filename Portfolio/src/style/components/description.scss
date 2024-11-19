@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px;
+    margin: 180px;
 
     .__img {
         width: 25%;
@@ -16,11 +16,33 @@
         h1 {
             font-size: 50px;
             color: #05396f;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #4e7aa8;
         }
 
         p {
-            font-size: 22px;
+            font-size: 17px;
         }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          
+            a {
+              font-size: 1.8rem;
+              color: #05396f; 
+              transition: color 0.3s ease;
+          
+              &:hover {
+                color: #4e7aa8; 
+              }
+            }
+          }
     }
 
     
