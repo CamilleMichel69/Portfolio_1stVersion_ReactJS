@@ -2,12 +2,12 @@
     {
         "id": 1,
         "title": "Booki",
-        "cover": "src/images/Booki.webp",
+        "cover": "/images/Booki.webp",
         "pictures": [
-            "src/images/Booki.webp",
-            "src/images/Booki2.webp",
-            "src/images/Booki3.webp",
-            "src/images/Booki4.webp"
+            "/images/Booki.webp",
+            "/images/Booki2.webp",
+            "/images/Booki3.webp",
+            "/images/Booki4.webp"
             ],
         "description": "Développer un site Internet en HTML et CSS pour permettre aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
         "obstacle" : "Le challenge de ce projet a été de respecter les maquettes fournies en s'appliquant sur chaque détail du site. Un CSS travaillé et soigné a permis d'aboutir à un design de qualité.",
@@ -22,13 +22,13 @@
     {
         "id": 2,
         "title": "Sophie Bluel",
-        "cover": "src/images/Sophie_Bluel.webp",
+        "cover": "/images/Sophie_Bluel.webp",
         "pictures": [
-            "src/images/Sophie_Bluel.webp",
-            "src/images/Sophie2.webp",
-            "src/images/Sophie3.webp",
-            "src/images/Sophie4.webp",
-            "src/images/Sophie5.webp"
+            "/images/Sophie_Bluel.webp",
+            "/images/Sophie2.webp",
+            "/images/Sophie3.webp",
+            "/images/Sophie4.webp",
+            "/images/Sophie5.webp"
             ],
         "description": "Développer les fonctionalités du site de l'architecte Sophie Bluel, pour filtrer ses posts, et en uploader de nouveaux via une modale, en communiquant avec une API.",
         "obstacle" : "Ce projet a été l'opportunité pour moi de travailler pour la première fois avec du JavaScript.  La principale difficulté a donc été de mettre en application mes connaissances pour réaliser les besoins du projet.",
@@ -44,12 +44,12 @@
     {
         "id": 3,
         "title": "Nina Carducci",
-        "cover": "src/images/Nina_Carducci.webp",
+        "cover": "/images/Nina_Carducci.webp",
         "pictures": [
-            "src/images/Nina_Carducci.webp",
-            "src/images/Nina2.webp",
-            "src/images/Nina3.webp",
-            "src/images/Nina4.webp"
+            "/images/Nina_Carducci.webp",
+            "/images/Nina2.webp",
+            "/images/Nina3.webp",
+            "/images/Nina4.webp"
             ],
         "description": "Débugging de certains défaults du site. Optimisation du référencement SEO. Amélioration accessibilité et performances du site grâce à Wave et Lighthouse.",
         "obstacle" : "Le référencement SEO est un aspect très intéressant que je n'avais pas encore eu l'occasion d'apprendre avant ce projet. Son optimisation, notamment grâce aux balises <meta>, a été possible grâce à beaucoup de recherches en ligne et d'analyses du site.",
@@ -66,12 +66,12 @@
     {
         "id": 4,
         "title": "Kasa",
-        "cover": "src/images/Kasa.webp",
+        "cover": "/images/Kasa.webp",
         "pictures": [
-            "src/images/Kasa.webp",
-            "src/images/Kasa2.webp",
-            "src/images/Kasa3.webp",
-            "src/images/Kasa4.webp"
+            "/images/Kasa.webp",
+            "/images/Kasa2.webp",
+            "/images/Kasa3.webp",
+            "/images/Kasa4.webp"
             ],
         "description": "Développement de l'interface Front-End d'un site d'agence immobilière en React.js, avec CRA et React-Router, en s'appuyant sur un Back-End développé avec Node.js.",
         "obstacle" : "J'ai pris beaucoup de plaisir à développer ce projet en React.js. Je n'ai pas spécialement ressenti de difficulté ou de point bloquant. React.js est un framework avec lequel il est très agréable de travailler.",
@@ -88,13 +88,13 @@
     {
         "id": 5,
         "title": "Mon Vieux Grimoire",
-        "cover": "src/images/Mon_Vieux_Grimoire.webp",
+        "cover": "/images/Mon_Vieux_Grimoire.webp",
         "pictures": [
-            "src/images/Mon_Vieux_Grimoire.webp",
-            "src/images/MVG2.webp",
-            "src/images/MVG3.webp",
-            "src/images/MVG4.webp",
-            "src/images/MVG5.webp"
+            "/images/Mon_Vieux_Grimoire.webp",
+            "/images/MVG2.webp",
+            "/images/MVG3.webp",
+            "/images/MVG4.webp",
+            "/images/MVG5.webp"
             ],
         "description": "Développement du Back-End d'un site de notation de livres avec Express de Node.js et MongoDB pour la base de données. Sécurité des données grâce à des middlewares, hashage de mot de passe, inscription à e-mail unique, et gestion de tokens.",
         "obstacle" : "Premier projet sur lequel j'ai pu aborder la notion de Back-End. Comme avec mon premier projet en JavaScript, le plus fastidieux a été de mettre en application toutes les connaissances acquises. Après plusieurs semaines de travail et de réflexion, j'ai pu finaliser ce projet.",
@@ -112,12 +112,12 @@
     {
         "id": 6,
         "title": "Qwenta - Menu Maker",
-        "cover": "src/images/Qwenta.webp",
+        "cover": "/images/Qwenta.webp",
         "pictures": [
-            "src/images/Qwenta.webp",
-            "src/images/Qwenta2.webp",
-            "src/images/Qwenta3.webp",
-            "src/images/Qwenta4.webp"
+            "/images/Qwenta.webp",
+            "/images/Qwenta2.webp",
+            "/images/Qwenta3.webp",
+            "/images/Qwenta4.webp"
             ],
         "description": "Planifier le développement d'un site de création de menu personnalisable de restaurant : veille technologique via Feedly, choix des spécifications techniques du projet, organisation grâce à un Kanban via Notion.",
         "obstacle" : "Novice en gestion de projet, la difficulté principale a été de déterminer les ressources adaptées au projet, et leur complexité. Une veille approfondie a permis de faire des choix réfléchis.",
@@ -132,13 +132,13 @@
     {
         "id": 7,
         "title": "Monopoly GO",
-        "cover": "src/images/MonopolyGO.webp",
+        "cover": "/images/MonopolyGO.webp",
         "pictures": [
-            "src/images/MonopolyGO.webp",
-            "src/images/Monopoly2.webp",
-            "src/images/Monopoly3.webp",
-            "src/images/Monopoly4.webp",
-            "src/images/Monopoly5.webp"
+            "/images/MonopolyGO.webp",
+            "/images/Monopoly2.webp",
+            "/images/Monopoly3.webp",
+            "/images/Monopoly4.webp",
+            "/images/Monopoly5.webp"
             ],
         "description": "Projet personnel, développé pour une utilisation mobile, permettant de voir les autocollants à collectionner que nous pouvons échanger. Mise en place d'une base de données via MongoDB gérée via Express de Node.js, et déploiement sur Render et Netlify.",
         "obstacle" : "Premier projet personnel, toujours en cours d'amélioration. La difficulté a été de choisir comment accéder aux autocollants. Le choix a été porté sur MongoDB. Prochaine amélioration : création d'un espace personnel pour élargir le nombre d'utilisateurs.",
