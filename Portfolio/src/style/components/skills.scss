@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    .skills-box-1, .skills-box-2 {
+    .skills-box-1, .skills-box-2, .skills-box-3 {
         display: grid;
         width: 80%;
         max-width: 1000px;
@@ -17,6 +17,15 @@
 
     .skills-box-2 {
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2rem; 
+    }
+
+    .skills-box-3 {
+        grid-template-columns: repeat(2, 1fr);
+        
+        .bottom {
+            background-color: #4e7aa8;
+        }
     }
 
     .skills-card {

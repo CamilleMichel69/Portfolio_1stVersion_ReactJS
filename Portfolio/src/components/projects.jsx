@@ -1,4 +1,3 @@
-// Projects.jsx
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,17 +33,20 @@ const Projects = () => {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === "ArrowRight") {
-        handleNext();
-      } else if (event.key === "ArrowLeft") {
-        handleBack();
+      if (!isModalOpen) { // Exécute uniquement si la modale est fermée
+        if (event.key === "ArrowRight") {
+          handleNext();
+        } else if (event.key === "ArrowLeft") {
+          handleBack();
+        }
       }
     };
+
     window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [isModalOpen]); // Ajoute isModalOpen comme dépendance pour que cela se réévalue à chaque changement
 
   const positions = ["center", "right", "right1", "hidden", "hidden", "left1", "left"];
 
@@ -63,11 +65,11 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="carousel-container">
+    <section id="projects" className="carousel-container">
       <h2>PROJETS</h2>
       <div className="carousel">
-      {projects.map((project, index) => (
-        <motion.div
+        {projects.map((project, index) => (
+          <motion.div
             key={index}
             className="carousel-item"
             initial="hidden"
@@ -75,13 +77,13 @@ const Projects = () => {
             variants={imageVariants}
             transition={{ duration: 0.5 }}
             onClick={() => openModal(project)}
-        >
-            <div className="image-wrapper"> 
-            <img src={project.cover} alt={`Cover of ${project.title}`} className="carousel-image" />
-            <div className="carousel-overlay">Cliquez sur moi !</div>
-            </div>
+          >
             <h3 className="project-title">{project.title}</h3>
-        </motion.div>
+            <div className="image-wrapper"> 
+              <img src={project.cover} alt={`Cover of ${project.title}`} className="carousel-image" />
+              <div className="carousel-overlay">Cliquez sur moi !</div>
+            </div>
+          </motion.div>
         ))}
 
         <div className="carousel-arrow left" onClick={handleBack}>
@@ -91,10 +93,17 @@ const Projects = () => {
           <FontAwesomeIcon icon={faChevronRight} size="2x" />
         </div>
       </div>
+      <div className="carousel-indicators">
+        {projects.map((_, index) => (
+          <div
+            key={index}
+            className={`indicator ${index === centerIndex ? "active" : ""}`}
+          ></div>
+        ))}
+      </div>
 
-      {/* Utilisation du composant ModalProject */}
       <ModalProject isOpen={isModalOpen} project={selectedProject} onClose={closeModal} />
-    </div>
+    </section>
   );
 };
 

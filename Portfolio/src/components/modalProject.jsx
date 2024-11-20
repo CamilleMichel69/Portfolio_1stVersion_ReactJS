@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import FlippingCards from "./flippingCards";
 import Modal from "react-modal";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +23,7 @@ const ModalProject = ({ isOpen, project, onClose }) => {
     if (isOpen && project && project.pictures.length > 0) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % project.pictures.length);
-      }, 2000);
+      }, 3000);
 
       return () => clearInterval(interval);
     }
@@ -46,13 +47,10 @@ const ModalProject = ({ isOpen, project, onClose }) => {
     >
       {project && (
         <div className="modal-content">
-          {/* Bouton de fermeture en haut à droite */}
           <button onClick={onClose} className="modal-close-icon">
             <FontAwesomeIcon icon={faTimes} />
           </button>
-
           <h2 className="modal-title">{project.title}</h2>
-
           <div className="modal-carousel">
             <div className="carousel">
               <motion.div
@@ -88,15 +86,13 @@ const ModalProject = ({ isOpen, project, onClose }) => {
             ))}
           </div>
 
-          <p>{project.description}</p>
-
-          <div className="competences-container">
-            {project.competences.map((competence, index) => (
-              <span key={index} className="competence-item">
-                {competence}
-              </span>
-            ))}
-          </div>
+          <FlippingCards
+            project={{
+              description: project.description,
+              obstacle: project.obstacle,
+              competences: project.competences
+            }}
+          />
 
           {project.githublink && (
             <a
@@ -122,6 +118,7 @@ ModalProject.propTypes = {
     title: PropTypes.string.isRequired,
     pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
     description: PropTypes.string,
+    obstacle: PropTypes.string,
     competences: PropTypes.arrayOf(PropTypes.string).isRequired,
     githublink: PropTypes.string,
   }),

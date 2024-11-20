@@ -60,6 +60,33 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            <div className="skills-box-3">
+                <div className="skills-card bottom">
+                    <h3>Service Client</h3>
+                    <div className="skills-list">
+                        <span className="skill-bubble">Résilience</span>
+                        <span className="skill-bubble">Proactivité</span>
+                        <span className="skill-bubble">Esprit d&apos;équipe</span>
+                        <span className="skill-bubble">Flexibilité</span>
+                        <span className="skill-bubble">Salesforce</span>
+                        <span className="skill-bubble">Hubspot</span>
+                        <span className="skill-bubble">Anglais</span>
+                        <span className="skill-bubble">Espagnol</span>
+                    </div>
+                </div>
+                <div className="skills-card bottom">
+                    <h3>Centres d&apos;Intérêts</h3>
+                    <div className="skills-list">
+                        <span className="skill-bubble">Jeux Vidéos</span>
+                        <span className="skill-bubble">Nouvelles technologies</span>
+                        <span className="skill-bubble">Sports mécaniques</span>
+                        <span className="skill-bubble">Sports de raquette</span>
+                        <span className="skill-bubble">Danse</span>
+                        <span className="skill-bubble">Musique</span>
+                        <span className="skill-bubble">Voyage</span>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
