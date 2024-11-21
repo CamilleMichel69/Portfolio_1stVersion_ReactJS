@@ -48,6 +48,7 @@ const ModalProject = ({ isOpen, project, onClose }) => {
       {project && (
         <div className="modal-content">
           <button onClick={onClose} className="modal-close-icon">
+            <span className="text-none">Close</span>
             <FontAwesomeIcon icon={faTimes} />
           </button>
           <h2 className="modal-title">{project.title}</h2>
@@ -69,9 +70,11 @@ const ModalProject = ({ isOpen, project, onClose }) => {
             </div>
             <div className="carousel-controls">
               <button className="carousel-arrow left" onClick={handleBack}>
+                <span className="text-none">Left</span>
                 <FontAwesomeIcon icon={faChevronLeft} />
               </button>
               <button className="carousel-arrow right" onClick={handleNext}>
+                <span className="text-none">Right</span>
                 <FontAwesomeIcon icon={faChevronRight} />
               </button>
             </div>

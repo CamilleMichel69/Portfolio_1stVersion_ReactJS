@@ -14,7 +14,10 @@ const Header = () => {
         <header className="header">
             <nav className="nav-bar">
                 <ul className={isOpen ? "nav-links open" : "nav-links"}>
-                    <li><a href="#home"><FontAwesomeIcon icon={faHouse} /></a></li>
+                    <li><a href="#home">
+                        <span className="text-none">Accueil</span>
+                        <FontAwesomeIcon icon={faHouse}/>
+                        </a></li>
                     <li className="nav-item">
                         <a href="#skills" className="nav-link">
                             <span className="text">Compétences</span>

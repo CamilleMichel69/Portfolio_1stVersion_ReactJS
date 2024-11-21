@@ -93,9 +93,11 @@ const Contact = () => {
         <p>Retrouvez-moi également sur GitHub et LinkedIn</p>
         <div className="social-buttons">
             <a href="https://github.com/CamilleMichel69" target="_blank" rel="noopener noreferrer">
+              <span className="text-none">GitHub</span>
               <FontAwesomeIcon icon={faGithub} className="social-icon" />
             </a>
             <a href="https://www.linkedin.com/in/camille-michel-a4364aa0/" target="_blank" rel="noopener noreferrer">
+              <span className="text-none">LinkedIn</span>
               <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
             </a>
         </div>
