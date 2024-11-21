@@ -1,5 +1,3 @@
-import '../style/components/skills.scss';
-
 const Skills = () => {
     return (
         <section id="skills" className="skills">

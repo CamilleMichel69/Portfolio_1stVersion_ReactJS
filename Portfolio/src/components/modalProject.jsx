@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faChevronLeft, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons"; // Ajout de faTimes
-import "../style/components/modalProject.scss";
 
 Modal.setAppElement("#root");
 

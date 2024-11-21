@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import "../style/components/flippingCards.scss";
 
 const FlippingCards = ({ project }) => {
     const [flipped, setFlipped] = useState([false, false, false]);

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import ModalProject from "./modalProject";
 import projects from "../datas/projects.json";
-import "../style/components/projects.scss";
 
 const Projects = () => {
   const [centerIndex, setCenterIndex] = useState(0);

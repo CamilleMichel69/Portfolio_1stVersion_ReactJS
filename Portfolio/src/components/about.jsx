@@ -1,5 +1,3 @@
-import '../style/components/about.scss';
-
 const About = () => {
     return (
         <section id="about" className="about">

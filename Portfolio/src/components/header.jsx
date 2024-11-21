@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faScrewdriverWrench, faCode, faGraduationCap, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import '../style/components/header.scss';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
