@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faChevronLeft, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons"; // Ajout de faTimes
+import { faChevronLeft, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons"; 
 
 Modal.setAppElement("#root");
 
@@ -42,8 +42,7 @@ const ModalProject = ({ isOpen, project, onClose }) => {
       onRequestClose={onClose}
       contentLabel="Project Details"
       className="project-modal"
-      overlayClassName="project-modal-overlay"
-    >
+      overlayClassName="project-modal-overlay">
       {project && (
         <div className="modal-content">
           <button onClick={onClose} className="modal-close-icon">
@@ -58,13 +57,11 @@ const ModalProject = ({ isOpen, project, onClose }) => {
                 key={currentIndex}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
+                transition={{ duration: 1, ease: "easeInOut" }}>
                 <img
                   src={project.pictures[currentIndex]}
                   alt={`Image ${currentIndex + 1} de ${project.title}`}
-                  className="carousel-image"
-                />
+                  className="carousel-image"/>
               </motion.div>
             </div>
             <div className="carousel-controls">
@@ -78,7 +75,6 @@ const ModalProject = ({ isOpen, project, onClose }) => {
               </button>
             </div>
           </div>
-
           <div className="carousel-indicators">
             {project.pictures.map((_, index) => (
               <span
@@ -87,7 +83,6 @@ const ModalProject = ({ isOpen, project, onClose }) => {
               />
             ))}
           </div>
-
           <FlippingCards
             project={{
               description: project.description,
@@ -95,7 +90,6 @@ const ModalProject = ({ isOpen, project, onClose }) => {
               competences: project.competences
             }}
           />
-
           {project.githublink && (
             <a
               href={project.githublink}

@@ -32,7 +32,7 @@ const Projects = () => {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (!isModalOpen) { // Exécute uniquement si la modale est fermée
+      if (!isModalOpen) { 
         if (event.key === "ArrowRight") {
           handleNext();
         } else if (event.key === "ArrowLeft") {
@@ -45,7 +45,7 @@ const Projects = () => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isModalOpen]); // Ajoute isModalOpen comme dépendance pour que cela se réévalue à chaque changement
+  }, [isModalOpen]);
 
   const positions = ["center", "right", "right1", "hidden", "hidden", "left1", "left"];
 
@@ -84,7 +84,6 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
-
         <div className="carousel-arrow left" onClick={handleBack}>
           <FontAwesomeIcon icon={faChevronLeft} size="2x" />
         </div>
@@ -100,7 +99,6 @@ const Projects = () => {
           ></div>
         ))}
       </div>
-
       <ModalProject isOpen={isModalOpen} project={selectedProject} onClose={closeModal} />
     </section>
   );

@@ -17,16 +17,12 @@ const FlippingCards = ({ project }) => {
             <div
               key={index}
               className={`flipping-card ${flipped[index] ? "flipped" : ""}`}
-              onClick={() => handleFlip(index)}
-            >
+              onClick={() => handleFlip(index)}>
               <div className="flipping-card-inner">
-                {/* Face avant */}
                 <div className="flipping-card-front">
                   <h3 className="card-title">{title}</h3>
                 </div>
-  
-                {/* Face arrière */}
-                <div className="flipping-card-back">
+                  <div className="flipping-card-back">
                   {index === 2 ? (
                     <div className="competences-container">
                       {project.competences.map((competence, i) => (

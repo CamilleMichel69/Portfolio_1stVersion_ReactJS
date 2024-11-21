@@ -1,5 +1,6 @@
+@import '../utils/mixins';
+
 .footer {
-    display: flex;
-    justify-content: center; 
+    @include justifycenter;
     margin: 40px 0 20px;
 }

@@ -1,7 +1,9 @@
+@import '../utils//variables';
+@import '../utils/mixins';
+
 .skills {
-    display: flex;
+    @include aligncenter;
     flex-direction: column;
-    align-items: center;
 
     .skills-box-1, .skills-box-2, .skills-box-3 {
         display: grid;
@@ -24,12 +26,12 @@
         grid-template-columns: repeat(2, 1fr);
         
         .bottom {
-            background-color: #4e7aa8;
+            background-color: $second-color;
         }
     }
 
     .skills-card {
-        background-color: #05396f;
+        background-color: $main-color;
         color: white;
         border-radius: 20px;
         padding: 1.5rem;
@@ -37,7 +39,7 @@
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: #4e7aa8;
+            background-color: $second-color;
         }
 
         h3 {
@@ -54,7 +56,7 @@
 
         .skill-bubble {
             background-color: white;
-            color: #05396f;
+            color: $main-color;
             padding: 0.4rem 0.8rem;
             border-radius: 20px;
             font-size: 0.9rem;

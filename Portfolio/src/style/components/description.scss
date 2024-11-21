@@ -1,7 +1,8 @@
+@import '../utils//variables';
+@import '../utils/mixins';
+
 .description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include fullcenter;
     margin: 180px;
 
     .__img {
@@ -15,13 +16,13 @@
 
         h1 {
             font-size: 50px;
-            color: #05396f;
+            color: $main-color;
             margin: 20px 0;
         }
 
         h2 {
             font-size: 28px;
-            color: #4e7aa8;
+            color: $second-color;
         }
 
         p {
@@ -29,23 +30,18 @@
         }
 
         .social-buttons {
-            display: flex;
-            justify-content: center;
+            @include justifycenter;
             gap: 20px;
           
             a {
               font-size: 1.8rem;
-              color: #05396f; 
+              color: $main-color; 
               transition: color 0.3s ease;
           
               &:hover {
-                color: #4e7aa8; 
+                color: $second-color; 
               }
             }
-          }
+        }
     }
-
-    
-
-
 }

@@ -58,9 +58,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            required
-          />
-
+            required/>
           <label htmlFor="email">Email :</label>
           <input
             type="email"
@@ -68,9 +66,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            required
-          />
-
+            required/>
           <label htmlFor="message">Message :</label>
           <textarea
             id="message"
@@ -78,9 +74,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             rows="5"
-            required
-          ></textarea>
-
+            required></textarea>
           <div>
           <button type="submit" className="submit-button">
             Envoyer
