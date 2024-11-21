@@ -1,47 +1,123 @@
-@import '../utils//variables';
+@import '../utils/variables';
 @import '../utils/mixins';
 
 .description {
-    @include fullcenter;
-    margin: 180px;
+  @include fullcenter; 
+  margin: 180px; // Valeur par défaut (desktop)
 
+  .__img {
+    width: 25%;
+    border-radius: 50%;
+  }
+
+  .__paragraphe {
+    width: 500px;
+    margin-left: 50px;
+
+    h1 {
+      font-size: 50px;
+      color: $main-color;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: $second-color;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .social-buttons {
+      @include justifycenter;
+      gap: 20px;
+
+      a {
+        font-size: 1.8rem;
+        color: $main-color;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $second-color;
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @include media(tablet) {
+    margin: 100px;
+    
     .__img {
-        width: 25%;
-        border-radius: 50%;
+      width: 35%;
     }
 
     .__paragraphe {
-        width: 500px;
-        margin-left: 50px;
+      width: 400px;
+      margin-left: 30px;
 
-        h1 {
-            font-size: 50px;
-            color: $main-color;
-            margin: 20px 0;
-        }
+      h1 {
+        font-size: 40px;
+      }
 
-        h2 {
-            font-size: 28px;
-            color: $second-color;
-        }
+      h2 {
+        font-size: 24px;
+      }
 
-        p {
-            font-size: 17px;
-        }
-
-        .social-buttons {
-            @include justifycenter;
-            gap: 20px;
-          
-            a {
-              font-size: 1.8rem;
-              color: $main-color; 
-              transition: color 0.3s ease;
-          
-              &:hover {
-                color: $second-color; 
-              }
-            }
-        }
+      p {
+        font-size: 15px;
+      }
     }
+  }
+
+  @include media(small-tablet) {
+    margin: 80px;
+
+    .__img {
+      width: 40%;
+    }
+
+    .__paragraphe {
+      width: 350px;
+      margin-left: 20px;
+
+      h1 {
+        font-size: 35px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include media(mobile) {
+    margin: 50px 30px;
+
+    .__img {
+      width: 60%;
+    }
+
+    .__paragraphe {
+      width: 100%;
+      margin-left: 0;
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
 }
