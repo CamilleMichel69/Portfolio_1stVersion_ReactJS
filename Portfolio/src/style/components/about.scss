@@ -57,34 +57,40 @@
         border-radius: 15px;
         padding: 15px;
         width: 200px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout de la transition */
         position: absolute;
         z-index: 2; 
-
+    
         &.top {
             bottom: 100%; 
             margin-bottom: 30px;
         }
-
+    
         &.bottom {
             top: 100%;
             margin-top: 30px; 
         }
-
+    
+        /* Effet de survol */
+        &:hover {
+            transform: scale(1.1); /* Grossissement de 10% */
+            background-color: rgba(10, 70, 130, 1); /* Optionnel : changement de couleur au survol */
+        }
+    
         h3 {
             margin: 0;
             font-size: 0.9rem;
         }
-
+    
         h4 {
             margin: 5px auto;
         }
-
+    
         p {
             font-size: 15px;
             margin: 10px auto;
         }
-
+    
         .missions {
             position: absolute;
             display: flex;
@@ -94,7 +100,7 @@
             top: -10px; 
             left: 50%;
             transform: translateX(-50%);
-            background-color: #4e7aa8;
+            background-color: #05396f;
             color: white;
             border-radius: 15px;
             padding: 10px;
@@ -112,12 +118,12 @@
                 margin-bottom: 5px;
                 text-align: left;
             }
-
+    
             &:hover {
                 opacity: 1;
             }
         }
-    }
+    }    
 }
 
 
