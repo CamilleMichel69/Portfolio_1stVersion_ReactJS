@@ -97,10 +97,11 @@
   }
 
   @include media(mobile) {
+    flex-direction: column;
     margin: 50px 30px;
 
     .__img {
-      width: 60%;
+      width: 35%;
     }
 
     .__paragraphe {
@@ -112,7 +113,7 @@
       }
 
       h2 {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       p {
