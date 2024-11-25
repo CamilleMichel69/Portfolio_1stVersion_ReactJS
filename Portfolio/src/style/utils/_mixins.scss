@@ -27,4 +27,4 @@
     } @else if $breakpoint == mobile {
       @media (max-width: 480px) { @content; }
     }
-  }
+}

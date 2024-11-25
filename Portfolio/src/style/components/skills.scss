@@ -1,39 +1,25 @@
-@import '../utils//variables';
+@import '../utils/variables';
 @import '../utils/mixins';
 
 .skills {
     @include aligncenter;
     flex-direction: column;
+    padding: 2rem;
 
-    .skills-box-1, .skills-box-2, .skills-box-3 {
-        display: grid;
-        width: 80%;
+    .skills-box {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        width: 90%;
         max-width: 1000px;
-        gap: 2rem;
-    }
-
-    .skills-box-1 {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 2rem; 
-    }
-
-    .skills-box-2 {
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 2rem; 
-    }
-
-    .skills-box-3 {
-        grid-template-columns: repeat(2, 1fr);
-        
-        .bottom {
-            background-color: $second-color;
-        }
     }
 
     .skills-card {
+        flex: 1 1 calc(33.333% - 2rem);
         background-color: $main-color;
         color: white;
         border-radius: 20px;
+        margin: 10px;
         padding: 1.5rem;
         text-align: center;
         transition: background-color 0.3s ease;
@@ -44,7 +30,7 @@
 
         h3 {
             font-size: 1.3rem;
-            margin-top: 0;
+            margin: 0 0 10px;
         }
 
         .skills-list {
@@ -70,5 +56,38 @@
                 cursor: default;
             }
         }
+    }
+
+    .bottom {
+        background-color: $second-color;
+    }
+}
+
+.skills {
+    @include media(small-tablet) {
+      .skills-card {
+        padding: 1rem;
+  
+        h3 {
+          font-size: 1.1rem;
+        }
+  
+        .skill-bubble {
+          font-size: 0.8rem;
+          padding: 0.3rem 0.6rem;
+        }
+      }
+    }
+  
+    @include media(mobile) {
+      padding: 1rem;
+  
+      .skills-card {
+        padding: 0.8rem;
+  
+        .skills-list {
+          gap: 0.3rem;
+        }
+      }
     }
 }

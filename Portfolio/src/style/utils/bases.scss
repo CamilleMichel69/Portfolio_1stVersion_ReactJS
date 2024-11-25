@@ -1,13 +1,17 @@
 @import '../utils//variables';
 
-html, body {
+* {
+    padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
-}
+    box-sizing: border-box;
+    font-family: 'Jost';
+  }
 
 body {
+    display: flex;
+    flex-direction: column;
     background: #d8eafc;
-    font-family: 'Jost';
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -32,3 +36,11 @@ h2 {
 .text-none {
     display: none;
 }
+
+@media (max-width: 650px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  

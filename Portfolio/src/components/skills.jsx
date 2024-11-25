@@ -2,7 +2,7 @@ const Skills = () => {
     return (
         <section id="skills" className="skills">
             <h2>COMPÉTENCES</h2>
-            <div className="skills-box-1">
+            <div className="skills-box">
                 <div className="skills-card">
                     <h3>Développement Front-End</h3>
                     <div className="skills-list">
@@ -24,7 +24,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="skills-box-2">
+            <div className="skills-box">
                 <div className="skills-card">
                     <h3>Gestion de version et Collaboration</h3>
                     <div className="skills-list">
@@ -58,7 +58,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="skills-box-3">
+            <div className="skills-box">
                 <div className="skills-card bottom">
                     <h3>Service Client</h3>
                     <div className="skills-list">
