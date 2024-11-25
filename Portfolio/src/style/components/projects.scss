@@ -24,17 +24,17 @@
             width: 100%;
             max-width: 600px;
             height: 400px;
-            overflow: hidden; 
+            overflow: hidden;
 
             .image-wrapper {
-                position: relative; 
+                position: relative;
                 width: 100%;
                 max-width: 600px;
-                height: 350px; 
+                height: 350px;
                 border-radius: 12px;
-                overflow: hidden; 
+                overflow: hidden;
             }
-        
+
             .carousel-image {
                 width: 100%;
                 height: 100%;
@@ -43,11 +43,11 @@
                 transition: transform 0.5s ease;
                 cursor: pointer;
             }
-        
+
             .carousel-image:hover {
                 transform: scale(1.1);
             }
-        
+
             .carousel-overlay {
                 position: absolute;
                 top: 0;
@@ -61,13 +61,13 @@
                 font-weight: bold;
                 opacity: 0;
                 transition: opacity 0.3s ease;
-                pointer-events: none; 
+                pointer-events: none;
             }
-        
+
             .image-wrapper:hover .carousel-overlay {
                 opacity: 1;
             }
-        
+
             .project-title {
                 margin-top: 1rem;
                 font-size: 1.5rem;
@@ -106,20 +106,127 @@
         @include justifycenter;
         margin-top: 20px;
         gap: 10px;
-      
+
         .indicator {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background-color: #add8e6;
-          transition: background-color 0.3s ease, transform 0.3s ease;
-      
-          &.active {
-            background-color: $main-color; 
-            transform: scale(1.2);
-          }
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #add8e6;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &.active {
+                background-color: $main-color;
+                transform: scale(1.2);
+            }
         }
-    }      
+    }
+}
+
+// Responsive Styles
+@include media(tablet) {
+    .carousel-container {
+        margin: 80px auto;
+
+        .carousel {
+            width: 70vw;
+            height: 45vh;
+
+            .carousel-item {
+                height: 350px;
+
+                .image-wrapper {
+                    height: 300px;
+                }
+
+                .project-title {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .carousel-arrow {
+                font-size: 0.6rem;
+                padding: 8px 6px;
+            }
+        }
+
+        .carousel-indicators {
+            .indicator {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+@include media(small-tablet) {
+    .carousel-container {
+        margin: 70px auto;
+
+        .carousel {
+            width: 85vw;
+            height: auto; // Auto ajuste la hauteur
+
+            .carousel-item {
+                height: auto;
+
+                .image-wrapper {
+                    height: 250px;
+                }
+
+                .project-title {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .carousel-arrow {
+                font-size: 0.55rem;
+                padding: 7px 5px;
+            }
+        }
+
+        .carousel-indicators {
+            .indicator {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+@include media(mobile) {
+    .carousel-container {
+        margin: 50px auto;
+
+        .carousel {
+            width: 95vw;
+            height: auto;
+
+            .carousel-item {
+                height: auto;
+
+                .image-wrapper {
+                    height: 200px;
+                }
+
+                .project-title {
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .carousel-arrow {
+                font-size: 0.5rem;
+                padding: 6px 4px;
+            }
+        }
+
+        .carousel-indicators {
+            .indicator {
+                width: 6px;
+                height: 6px;
+            }
+        }
+    }
 }
 
 .no-scroll {
