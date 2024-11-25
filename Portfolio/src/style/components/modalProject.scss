@@ -143,8 +143,34 @@
   }
 
   @include media(mobile) {
-    .modal-content .modal-carousel .carousel .carousel-image {
-      height: 200px;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .modal-content {
+        .modal-close-icon {
+            top: 10px;
+            right: 10px;
+            font-size: 1rem;
+        }
+
+        .modal-title {
+            font-size: 1rem;
+        }
+
+        .modal-carousel {
+            .carousel .carousel-image {
+            height: 150px;
+            }
+
+            .carousel-controls {
+                top: 40%;
+
+                .carousel-arrow {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
   }
 }
