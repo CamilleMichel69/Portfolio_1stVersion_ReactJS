@@ -10,26 +10,26 @@
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
+
     h2 {
       text-align: center;
       margin-bottom: 20px;
     }
-  
+
     .success-message {
       color: green;
       text-align: center;
       margin-bottom: 20px;
     }
-  
+
     .contact-form {
       @include flexcolumn;
-  
+
       label {
         margin-bottom: 5px;
         font-weight: bold;
       }
-  
+
       input,
       textarea {
         margin-bottom: 25px;
@@ -38,7 +38,7 @@
         border-radius: 4px;
         font-size: 16px;
       }
-  
+
       .submit-button {
         padding: 10px 45px;
         background: $main-color;
@@ -47,7 +47,7 @@
         border-radius: 20px;
         cursor: pointer;
         font-size: 16px;
-  
+
         &:hover {
           background: $second-color;
         }
@@ -66,17 +66,75 @@
     .social-buttons {
       @include justifycenter;
       gap: 50px;
-    
+
       a {
         font-size: 3rem;
-        color: $main-color; 
+        color: $main-color;
         transition: color 0.3s ease;
-    
+
         &:hover {
-          color: $second-color; 
+          color: $second-color;
+        }
+      }
+    }
+  }
+
+  @include media(tablet) {
+    .contact-form-container {
+      padding: 15px;
+    }
+
+    .social-box {
+      margin-top: 20px;
+
+      p {
+        font-size: 1.2rem;
+      }
+      
+      .social-buttons {
+        gap: 30px;
+
+        a {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  @include media(mobile) {
+    .contact-form-container {
+      width: 410px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .contact-form {
+        input,
+        textarea {
+          font-size: 14px;
+          padding: 8px;
+        }
+
+        .submit-button {
+          padding: 8px 30px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .social-box {
+      p {
+        font-size: 1rem;
+      }
+
+      .social-buttons {
+        gap: 20px;
+
+        a {
+          font-size: 2rem;
         }
       }
     }
   }
 }
-  
