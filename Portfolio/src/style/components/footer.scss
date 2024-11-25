@@ -3,4 +3,12 @@
 .footer {
     @include justifycenter;
     margin: 40px 0 20px;
+
+    @include media(small-tablet) {
+        font-size: 0.9rem;
+    }
+
+    @include media(mobile) {
+        font-size: 0.8rem;
+    }
 }
