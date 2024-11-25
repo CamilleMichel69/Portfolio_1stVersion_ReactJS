@@ -199,8 +199,8 @@
 @include media(mobile) {
     .carousel-container {
         .carousel {
+            max-height: 150px;
 
-            max-height: 200px;
             .carousel-item {
                 .image-wrapper {
                     height: 130px;
@@ -208,7 +208,6 @@
 
                 .project-title {
                     font-size: 0.9rem;
-                    margin-top: 0;
                 }
             }
         }

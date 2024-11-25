@@ -10,7 +10,7 @@ const Description = () => {
             <div className="__paragraphe">
                 <h1>Camille Michel</h1>
                 <h2>Concevoir, coder et innover pour un web meilleur.</h2>
-                <p>Après 7 années passées à écouter et accompagner les utilisateurs, je me suis naturellement tournée vers le développement web pour concevoir des solutions à leur image.</p>
+                <p>Après 7 années passées à écouter et accompagner les utilisateurs, je me suis naturellement tournée vers une formation en développement web pour concevoir des solutions à leur image.</p>
                 <div className="social-buttons">
                     <a href="https://github.com/CamilleMichel69" target="_blank" rel="noopener noreferrer">
                         <span className="text-none">GitHub</span>
