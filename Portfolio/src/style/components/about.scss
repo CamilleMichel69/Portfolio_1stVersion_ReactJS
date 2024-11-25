@@ -8,118 +8,198 @@
     margin: 0 auto;
     margin-bottom: 250px;
     padding: 20px;
-
+  
     h2 {
-        text-align: center;
-        margin-bottom: 100px;
+      text-align: center;
+      margin-bottom: 100px;
     }
-
+  
     .timeline {
-        position: relative;
-        width: 100%;
-        padding: 50px 0;
-        margin-top: 100px;
-        display: flex;
-        justify-content: space-between; 
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background-color: white;
-        }
-    }
-
-    .timeline-item {
-        position: relative;
-        @include aligncenter;
-        flex-direction: column;
-        flex: 1; 
-    }
-
-    .timeline-point {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: $second-color;
+      position: relative;
+      width: 100%;
+      padding: 50px 0;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+  
+      &::before {
+        content: '';
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        z-index: 1; 
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+      }
     }
-
+  
+    .timeline-item {
+      position: relative;
+      @include aligncenter;
+      flex-direction: column;
+      flex: 1;
+    }
+  
+    .timeline-point {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $second-color;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  
     .timeline-card {
-        background-color: rgba(5, 57, 111, 1);
-        color: white;
-        border-radius: 15px;
-        padding: 15px;
-        width: 200px;
-        transition: background-color 0.3s ease, transform 0.3s ease; 
-        position: absolute;
-        z-index: 2; 
-    
-        &.top {
-            bottom: 100%; 
-            margin-bottom: 30px;
-        }
-    
-        &.bottom {
-            top: 100%;
-            margin-top: 30px; 
-        }
-    
-        &:hover {
-            transform: scale(1.1); 
-            background-color: rgba(10, 70, 130, 1); 
-        }
-    
-        h3 {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-    
-        h4 {
-            margin: 5px auto;
-        }
-    
-        p {
-            font-size: 15px;
-            margin: 10px auto;
-        }
-    
+      background-color: rgba(5, 57, 111, 1);
+      color: white;
+      border-radius: 15px;
+      padding: 15px;
+      width: 200px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      position: absolute;
+      z-index: 2;
+  
+      &.top {
+        bottom: 100%;
+        margin-bottom: 30px;
+      }
+  
+      &.bottom {
+        top: 100%;
+        margin-top: 30px;
+      }
+  
+      &:hover {
+        transform: scale(1.1);
+  
         .missions {
-            position: absolute;
-            @include justifycenter;
-            align-items: flex-start; 
+          opacity: 1;
+          background-color: $second-color;
+          border-radius: 15px;
+        }
+      }
+  
+      h3 {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+  
+      h4 {
+        margin: 5px auto;
+        font-size: 0.9rem;
+      }
+  
+      p {
+        font-size: 14px;
+        margin: 10px auto;
+      }
+  
+      .missions {
+        position: absolute;
+        @include justifycenter;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%; 
+        height: 100%; 
+        opacity: 0;
+        transition: opacity 0.3s ease; 
+      }
+  
+      .missions ul {
+        padding: 0 10px;
+        margin: 0;
+      }
+  
+      .missions li {
+        font-size: 0.8rem;
+        text-align: left;
+      }
+    }
+}
+
+@include media(tablet) {
+    .about {
+        margin-bottom: 200px;
+    }
+}
+
+@include media(small-tablet) {
+    .about {
+        margin-bottom: 150px;
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        .timeline-card {
+            width: 180px;
+
+            h3 {
+                font-size: 0.7rem;
+            }
+
+            h4 {
+                font-size: 0.8rem;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .missions li {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@include media(mobile) {
+    .about {
+        margin-bottom: 0;
+
+        .timeline {
+            margin-top: 0;
             flex-direction: column; 
-            top: -10px; 
+            align-items: center;
+
+            &::before { 
+                width: 1%;
+                height: 90%;
+                top: 0;
+                left: 50%;
+            }
+        }
+
+        .timeline-item {
+            width: 70%; 
+            margin-bottom: -50px;
+        }
+
+        .timeline-card {
+            position: relative;
+        }
+
+        .timeline-point {
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
-            background-color: $main-color;
-            color: white;
-            border-radius: 15px;
-            padding: 10px;
-            width: 100%;
-            height: 100%;
-            opacity: 0; 
-            
-            ul {
-                padding: 0 20px;
-                margin: 0;
+        }
+
+        .timeline-card {
+            &.top {
+                right: 120px; 
+                top: -50px;
             }
-        
-            li {
-                font-size: 0.9rem;
-                margin-bottom: 5px;
-                text-align: left;
-            }
-    
-            &:hover {
-                opacity: 1;
+  
+            &.bottom {
+                left: 120px; 
+                top: -70px;
             }
         }
-    }    
+    }
 }

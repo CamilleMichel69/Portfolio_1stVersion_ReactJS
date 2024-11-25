@@ -63,7 +63,6 @@ const About = () => {
                         <div className="missions">
                             <ul>
                                 <li>Responsable recherche tuteur</li>
-                                <li>Suivi demandes cours en ligne</li>
                                 <li>Gestion comptes clients</li>
                                 <li>Gestion litiges clients/tuteurs</li>
                                 <li>Rétention</li>
