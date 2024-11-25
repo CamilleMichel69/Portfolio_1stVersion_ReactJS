@@ -21,9 +21,9 @@
             flex-direction: column;
             text-align: center;
             border-radius: 12px;
-            width: 100%;
+            width: 60%;
             max-width: 600px;
-            height: 400px;
+            height: 100%;
             overflow: hidden;
 
             .image-wrapper {
@@ -75,30 +75,31 @@
                 color: $second-color;
             }
         }
+    }
 
-        .carousel-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-            background-color: rgba(5, 57, 111, 0.7);
-            padding: 10px 7px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            font-size: 0.7rem;
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        background-color: rgba(5, 57, 111, 0.7);
+        padding: 10px 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 0.7rem;
+        z-index: 50;
 
-            &.left {
-                left: 10px;
-            }
+        &.left {
+            left: -50px;
+        }
 
-            &.right {
-                right: 10px;
-            }
+        &.right {
+            right: -50px;
+        }
 
-            &:hover {
-                background-color: $main-color;
-            }
+        &:hover {
+            background-color: $main-color;
         }
     }
 
@@ -129,23 +130,27 @@
 
         .carousel {
             width: 70vw;
-            height: 45vh;
 
             .carousel-item {
                 height: 350px;
-
-                .image-wrapper {
-                    height: 300px;
-                }
 
                 .project-title {
                     font-size: 1.3rem;
                 }
             }
 
-            .carousel-arrow {
-                font-size: 0.6rem;
-                padding: 8px 6px;
+        }
+
+        .carousel-arrow {
+            font-size: 0.6rem;
+            padding: 8px 6px;
+
+            &.left {
+                left: -30px;
+            }
+    
+            &.right {
+                right: -30px;
             }
         }
 
@@ -160,28 +165,26 @@
 
 @include media(small-tablet) {
     .carousel-container {
-        margin: 70px auto;
+        margin: 35px auto;
 
         .carousel {
-            width: 85vw;
-            height: auto; // Auto ajuste la hauteur
-
             .carousel-item {
                 height: auto;
 
                 .image-wrapper {
-                    height: 250px;
+                    height: 200px;
                 }
 
                 .project-title {
                     font-size: 1.2rem;
                 }
             }
-
-            .carousel-arrow {
-                font-size: 0.55rem;
-                padding: 7px 5px;
-            }
+        }
+        
+        .carousel-arrow {
+            top: 55%;
+            font-size: 0.6rem;
+            padding: 7px 5px;
         }
 
         .carousel-indicators {
@@ -195,28 +198,31 @@
 
 @include media(mobile) {
     .carousel-container {
-        margin: 50px auto;
-
         .carousel {
-            width: 95vw;
-            height: auto;
 
+            max-height: 200px;
             .carousel-item {
-                height: auto;
-
                 .image-wrapper {
-                    height: 200px;
+                    height: 130px;
                 }
 
                 .project-title {
                     font-size: 1rem;
-                    margin-top: 0.5rem;
+                    margin-top: 0;
                 }
             }
+        }
 
-            .carousel-arrow {
-                font-size: 0.5rem;
-                padding: 6px 4px;
+        .carousel-arrow {
+            font-size: 0.5rem;
+            padding: 6px 4px;
+
+            &.left {
+                left: -20px;
+            }
+    
+            &.right {
+                right: -20px;
             }
         }
 

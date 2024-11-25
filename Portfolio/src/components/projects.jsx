@@ -84,12 +84,12 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
-        <div className="carousel-arrow left" onClick={handleBack}>
-          <FontAwesomeIcon icon={faChevronLeft} size="2x" />
-        </div>
-        <div className="carousel-arrow right" onClick={handleNext}>
-          <FontAwesomeIcon icon={faChevronRight} size="2x" />
-        </div>
+      </div>
+      <div className="carousel-arrow left" onClick={handleBack}>
+        <FontAwesomeIcon icon={faChevronLeft} size="2x" />
+      </div>
+      <div className="carousel-arrow right" onClick={handleNext}>
+        <FontAwesomeIcon icon={faChevronRight} size="2x" />
       </div>
       <div className="carousel-indicators">
         {projects.map((_, index) => (
